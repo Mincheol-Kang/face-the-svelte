@@ -23,7 +23,7 @@
         let strArray = targetWord.split('');
         const boldPoints = Hangul.rangeSearch(targetWord, inputText);
         boldPoints.forEach( indexs => {
-            strArray.splice(indexs[0]+(shift++),0,'<b style="color:blue;">');
+            strArray.splice(indexs[0]+(shift++),0,'<b style="color:#1E94FC;">');
             strArray.splice(indexs[1]+1+(shift++),0,'</b>');
         })
         return `${strArray.join('')}`;
